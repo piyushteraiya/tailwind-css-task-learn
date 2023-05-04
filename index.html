@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Full Width Two Columns Dropdown</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/tailwind.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container mx-auto px-4">
+            <div class="relative isolate z-40 shadow">
+                 <div class="bg-white py-5 relative isolate z-50">
+                    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                        <button class="text-black text-gray-900 leading-6 text-sm font-semibold" onclick="toggleDropdown()">
+                            <span class="flex items-center">
+                                Solutions
+                                <svg class="ml-2 h-4 w-4 transform rotate-90" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.293 6.707a1 1 0 0 0 0 1.414L9.586 12l-4.293 4.293a1 1 0 1 0 1.414 1.414l4.999-4.999a1 1 0 0 0 0-1.414l-4.999-4.999a1 1 0 0 0-1.414 0z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div id="dropdown" class="absolute inset-x-0 top-0 -z-10 bg-white pt-16 shadow-lg ring-1 ring-gray-900/5">
+                    <div class="mx-auto grid max-w-7xl grid-cols-1 gap-y-10 gap-x-8 py-10 px-6 lg:grid-cols-2 lg:px-8">
+                        <div class="grid grid-cols-2 gap-x-6 sm:gap-x-8">
+                                <div class="text-gray-600">
+                                    <h3 class="text-sm font-medium leading-6 text-gray-500">Engagement</h3>
+                                    <ul class="list-inside mt-6 flow-root">
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                                </svg>
+                                                About
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="9" cy="7" r="4"></circle>
+                                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                </svg>
+                                                Customers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+                                                    <path d="M18 14h-8"></path>
+                                                    <path d="M15 18h-5"></path>
+                                                    <path d="M10 6h8v4h-8V6Z"></path>
+                                                </svg>
+                                                Press
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                                </svg>
+                                                Careers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                                    <path d="m9 12 2 2 4-4"></path>
+                                                </svg>
+                                                Privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text-gray-600">
+                                    <h3 class="text-sm font-medium leading-6 text-gray-500">Resources</h3>
+                                    <ul class="list-inside mt-6 flow-root">
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                                    <circle cx="9" cy="7" r="4"></circle>
+                                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                </svg>
+                                                Community
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                                </svg>
+                                                Partners
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                                </svg>
+                                                Guides
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex gap-x-4 py-2 text-sm font-semibold leading-6 text-gray-900" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9da0a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 flex-none text-gray-400">
+                                                    <path d="m22 8-6 4 6 4V8Z"></path>
+                                                    <rect x="2" y="6" width="14" height="12" rx="2" ry="2"></rect>
+                                                </svg>
+                                                Webinars
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-10 sm:gap-8 lg:grid-cols-2">
+                            <div class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
+                                <div class="relative flex-none">
+                                    <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto" src="https://images.unsplash.com/photo-1604328702728-d26d2062c20b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fG9mZmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Blog post image" />
+                                </div>
+                                <div>
+                                    <div class="flex items-center gap-x-4">
+                                        <time datetime="2023-03-16" class="text-sm leading-6 text-gray-600">Mar 16, 2023</time>
+                                        <span class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 text-xs font-medium text-gray-600 hover:bg-gray-100">Marketing</span>
+                                    </div>
+                                    <h2 class="mt-2 text-sm font-semibold leading-6 text-gray-900">Boost your conversion rate</h2>
+                                    <p class="mt-2 text-sm leading-6 text-gray-600">Et et dolore offcia quis nostrud esse qute cillum irure do esse. Eiusmod ad deserunt cupidatat est magna Lorem.</p>
+                                </div>
+                            </div>
+                            <div class="relative isolate flex max-w-2xl flex-col gap-x-8 gap-y-6 sm:flex-row sm:items-start lg:flex-col lg:items-stretch">
+                                <div class="relative flex-none">
+                                    <img class="aspect-[2/1] w-full rounded-lg bg-gray-100 object-cover sm:aspect-[16/9] sm:h-32 lg:h-auto" src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fG9mZmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Blog post image" />
+                                </div>
+                                <div>
+                                    <div class="mb-2 flex justify-start items-center">
+                                        <time datetime="2023-03-10" class="text-sm leading-6 text-gray-600">Mar 10, 2023</time>
+                                        <span class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 text-xs font-medium text-gray-600 hover:bg-gray-100">Sales</span>
+                                    </div>
+                                    <h2 class="mt-2 text-sm font-semibold leading-6 text-gray-900">How to use search engine optimization to drive sales</h2>
+                                    <p class="mt-2 text-sm leading-6 text-gray-600">Optio cum necessitibus dolor voluptatum provident commodi et.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleDropdown() {
+                var dropdown = document.getElementById("dropdown");
+                dropdown.classList.toggle("hidden");
+            }
+        </script>
+    </body>
+</html>
